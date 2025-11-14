@@ -23,7 +23,7 @@ html {
 
 body {
     background: var(--back-col);
-    position: relative;
+    position: relative; 
 }
 
 main {
@@ -36,19 +36,26 @@ main {
 .background-image {
     z-index: -1;
     background-size: cover;
-    width: 100%;
 }
 
 .background-image__top {
     position: absolute;
     top: 0;
     right: 0;
+    max-width: 100%;
 }
 
 .background-image__bottom {
     position: absolute;
     bottom: 0;
     left: 0;
+    max-width: 100%;
+}
+
+.background-image__top img,
+.background-image__bottom img,
+.intro__background img {
+    width: 100%;
 }
 
 a {
@@ -160,18 +167,19 @@ i {
 .card__type,
 .card__meta,
 .card__readmore {
-    padding: 14px 24px;
+    padding: 24px 24px;
     color: var(--font-col)
 }
 
 .card__readmore {
+    padding: 20px 24px;
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
 .card__meta {
-    padding: 8px 24px 44px 24px;
+    padding: 0 24px 54px 24px;
     font-size: 18px;
 }
 
@@ -408,7 +416,8 @@ i {
     .main,
     .header,
     .footer {
-        margin: 0 max(20px, calc(100vw / 9.17));
+        margin: 0 max(20px, max(120px, calc(100vw / 9.17)));
+        overflow-x: hidden;
     }
 
     .header {
@@ -427,6 +436,10 @@ i {
         flex-direction: column;
         gap: 20px;
         padding: 38px calc(100vw / 20);
+    }
+
+    .newsletter__title {
+        max-width: 100%;
     }
 
     .custom-input {
