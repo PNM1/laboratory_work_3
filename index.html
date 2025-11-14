@@ -5,46 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VRNas</title>
+    <link rel="icon" href="images/Logo.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <picture>
+        <a class="logo" href="index.html" aria-label="Перейти на Главную">
+            <picture class="card__img-container">
                 <img class="logo__img" src="images/Logo2.png" alt="logo">
             </picture>
-        </div>
+        </a>
         <div class="nav-menu">
             <a href="#">Home</a>
             <a href="#">About us</a>
             <a href="#">Service</a>
             <a href="#">Page <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            <a href="#">Blog <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a class="nav-menu__current-page" href="#">Blog <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
         </div>
         <div class="contact-us">
             <a href="#">Contact us</a>
         </div>
+        <div class="three-stripes">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
     </header>
-    <main class="main">s
-        <div class="name">
-            <h1>Blog</h1>
-            <ol class="tree-path">
+    <main class="main">
+        <div class="intro">
+            <h1 class="intro__name">Blog</h1>
+            <ol class="intro__tree-path">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#" aria-label="Перейти на Главную">Home</a>
                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a class="intro__current-page" href="#">Blog</a>
                 </li>
             </ol>
+            <div class="intro__background">
+                <img src="images/BlogBack.png" alt="top-image">
+            </div>
         </div>
         <section class="cards-container">
             <article class="card">
-                <img class="card__img" src="#" alt="man-with-wheel">
+                <picture class="card__img-container">
+                    <img class="card__img" src="images/Wheel.png" alt="man-with-wheel">
+                </picture>
                 <div class="card__type">
-                    VR Games
+                    <a href="#">VR Games</a>
                 </div>
                 <div class="card__meta">
                     Entertainment Goes Virtual: The Rise of VR Gaming
@@ -54,9 +68,11 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__img" src="#" alt="vr-glasses">
+                <picture class="card__img-container">
+                    <img class="card__img" src="images/VR2.png" alt="vr-glasses">
+                </picture>
                 <div class="card__type">
-                    VR Games
+                    <a href="#">VR Games</a>
                 </div>
                 <div class="card__meta">
                     Entertainment Goes Virtual: The Rise of VR Gaming
@@ -66,9 +82,11 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__img" src="#" alt="vr-glasses-with-hand">
+                <picture class="card__img-container">
+                    <img class="card__img" src="images/VR_hand.png" alt="vr-glasses-with-hand">
+                </picture>
                 <div class="card__type">
-                    VR Entertainment
+                    <a href="#">VR Entertainment</a>
                 </div>
                 <div class="card__meta">
                     Making Events Memorable: The Power of VR for Corporate and Special Occasions
@@ -78,9 +96,11 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__img" src="#" alt="fight">
+                <picture class="card__img-container">
+                    <img class="card__img" src="images/fighting.png" alt="fight">
+                </picture>
                 <div class="card__type">
-                    VR Event
+                    <a href="#">VR Event</a>
                 </div>
                 <div class="card__meta">
                     Exploring New Worlds: The Benefits of VR Travel
@@ -90,9 +110,11 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__img" src="#" alt="afraid-man">
+                <picture class="card__img-container">
+                    <img class="card__img" src="images/afraid.png" alt="afraid-man">
+                </picture>
                 <div class="card__type">
-                    VR Architecture
+                    <a href="#">VR Architecture</a>
                 </div>
                 <div class="card__meta">
                     Bringing Designs to Life: How VR is Changing Architecture
@@ -102,9 +124,11 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__img" src="#" alt="infinity">
+                <picture class="card__img-container">
+                    <img class="card__img" src="images/Inf.png" alt="infinity">
+                </picture>
                 <div class="card__type">
-                    VR Games
+                    <a href="#">VR Games</a>
                 </div>
                 <div class="card__meta">
                     Entertainment Goes Virtual: The Rise of VR Gaming
@@ -114,9 +138,11 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__img" src="#" alt="two-guys">
+                <picture class="card__img-container">
+                    <img class="card__img" src="images/two_guys.png" alt="two-guys">
+                </picture>
                 <div class="card__type">
-                    VR Games
+                    <a href="#">VR Games</a>
                 </div>
                 <div class="card__meta">
                     Entertainment Goes Virtual: The Rise of VR Gaming
@@ -126,9 +152,11 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__img" src="#" alt="meta-man">
+                <picture class="card__img-container">
+                    <img class="card__img" src="images/smart.png" alt="meta-man">
+                </picture>
                 <div class="card__type">
-                    VR Games
+                    <a href="#">VR Games</a>
                 </div>
                 <div class="card__meta">
                     Entertainment Goes Virtual: The Rise of VR Gaming
@@ -138,9 +166,11 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__img" src="#" alt="vr-glass-with-notebook">
+                <picture class="card__img-container">
+                    <img class="card__img" src="images/VR.png" alt="vr-glass-with-notebook">
+                </picture>
                 <div class="card__type">
-                    VR Education
+                    <a href="#">VR Education</a>
                 </div>
                 <div class="card__meta">
                     The Future of Education: How VR is Revolutionizing the Classroom
@@ -157,29 +187,53 @@
         </div>
         <div class="newsletter">
             <h2 class="newsletter__title">Subscribe to our newsletter for latest updates</h2>
-            <input type="email">
+            <div class="custom-input">
+                <input class="custom-input__input" type="email" placeholder="Enter your email address">
+                <span class="custom-input__icon">
+                    <i class="far fa-envelope"></i>
+                </span>
+                <button class="custom-input__button" aria-label="Send email">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <div class="background-image">
+            <div class="background-image__top">
+                <img src="images/TopRightBack.png" alt="top-right-image">
+            </div>
+            <div class="background-image__bottom">
+                <img src="images/DownLeftBack.png" alt="bottom-left-image">
+            </div>
         </div>
     </main>
     <footer class="footer">
         <div class="footer-info">
             <div class="footer-info__links">
-                <img src="/images/Logo2.png" alt="logo">
-                <div class="icons">
-                    <picture>
-                        <img src="/images/logo-twitter 2.png" alt="logo-twitter">
-                    </picture>
-                    <picture>
-                        <img src="/images/logo-fb-simple 2.png" alt="logo-fb">
-                    </picture>
-                    <picture>
-                        <img src="/images/logo-instagram 1.png" alt="logo-inst">
-                    </picture>
-                    <picture>
-                        <img src="/images/logo-github 1.png" alt="logo-github">
-                    </picture>
+                <img class="footer-info__logo" src="images/Logo2.png" alt="logo">
+                <div class="footer-info__logo-icons">
+                    <a class="twitter" href="#">
+                        <picture class="footer-info__img-container">
+                            <img src="images/twitter.png" alt="logo-twitter">
+                        </picture>
+                    </a>
+                    <a class="facebook" href="#">
+                        <picture class="footer-info__img-container">
+                            <img src="images/fb.png" alt="logo-fb">
+                        </picture>
+                    </a>
+                    <a class="instagram" href="#">
+                        <picture class="footer-info__img-container">
+                            <img src="images/instagram.png" alt="logo-inst">
+                        </picture>
+                    </a>
+                    <a class="github" href="https://github.com/PNM1/laboratory_work_3">
+                        <picture class="footer-info__img-container">
+                            <img src="images/github.png" alt="logo-github">
+                        </picture>
+                    </a>
                 </div>
             </div>
-            <div class="footer-info__quickllinks">
+            <div class="footer-info__quicklinks">
                 <h2 class="footer-info__name">Quicklinks</h2>
                 <a href="#">Home</a>
                 <a href="#">Pricing Plan</a>
